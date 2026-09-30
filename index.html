@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ing. Alberto Escobar Oñate · AGEO Constructora</title>
+<meta name="description" content="Ing. Alberto Escobar Oñate — Ingeniero Civil, AGEO Constructora. Huachi Grande, Ambato, Ecuador. Escríbenos por WhatsApp.">
+<meta property="og:title" content="Ing. Alberto Escobar Oñate · AGEO Constructora">
+<meta property="og:description" content="Ingeniero Civil · AGEO Constructora · Ambato, Ecuador">
+<meta property="og:image" content="https://ageo.evowebec.com/img/logo-circular.png">
+<meta name="theme-color" content="#0B2545">
+<link rel="icon" href="img/logo-circular.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2545;--navy-2:#13335c;--azul:#1B7FC4;--azul-l:#3FA7DE;--azul-bg:#eef6fc;--azul-s:#d6e9f6;
+  --naranja:#E8561C;--naranja-l:#F08A1E;
+  --ink:#1c2b3d;--muted:#6b7a8c;--line:#e1eaf2;--gris:#a9b3bd;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Montserrat','Segoe UI',system-ui,sans-serif;color:var(--ink);min-height:100vh;
+  background:linear-gradient(180deg,#0B2545 0%,#1a4677 28%,#eef3f8 58%,#fff 100%);
+  display:flex;justify-content:center;padding:26px 14px 44px;
+}
+.frame{
+  width:100%;max-width:430px;border-radius:30px;padding:2px;height:fit-content;
+  background:linear-gradient(160deg,var(--azul-l),rgba(63,167,222,.15) 35%,rgba(63,167,222,.15) 70%,var(--naranja-l));
+  box-shadow:0 26px 60px rgba(11,37,69,.35);
+}
+.card{border-radius:28px;overflow:hidden;text-align:center;background:#fff;position:relative}
+
+/* ---------- cabecera: plano de obra ---------- */
+.hero{
+  position:relative;padding:40px 20px 120px;overflow:hidden;
+  background:
+    linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px) 0 0/22px 22px,
+    linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px) 0 0/22px 22px,
+    linear-gradient(160deg,#0B2545 0%,#123a66 60%,#1B5f97 100%);
+}
+.hero .plano{position:absolute;inset:0;width:100%;height:100%;opacity:.28;pointer-events:none}
+.brand-sub{position:relative;font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:5px;white-space:nowrap;text-transform:uppercase;color:#fff;font-weight:600;opacity:.9}
+.corte{position:absolute;bottom:-1px;left:0;width:100%;height:46px;display:block}
+
+/* ---------- insignia ---------- */
+.badge{
+  width:132px;height:132px;border-radius:50%;margin:-78px auto 14px;position:relative;z-index:2;
+  background:#fff;padding:6px;box-shadow:0 12px 28px rgba(11,37,69,.28);
+}
+.badge img{width:100%;height:100%;display:block;border-radius:50%}
+
+h1{font-size:23px;font-weight:800;letter-spacing:.2px;color:var(--navy);line-height:1.25}
+h1 small{display:block;font-size:13px;font-weight:600;color:var(--naranja);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:4px}
+.role{color:var(--azul);font-weight:700;font-size:14px;margin-top:6px}
+.bio{font-size:13.5px;line-height:1.6;color:var(--muted);max-width:320px;margin:10px auto 0}
+.body{padding:0 22px 24px}
+
+/* ---------- info ---------- */
+.info{
+  margin:18px 0;border-radius:16px;border:1px solid var(--line);
+  background:var(--azul-bg);padding:12px 14px;font-size:13px;line-height:2;color:var(--ink);text-align:left;
+}
+.info div{display:flex;align-items:center}
+.info .ico{display:inline-flex;width:22px;height:22px;border-radius:7px;background:var(--navy);align-items:center;justify-content:center;margin-right:10px;flex-shrink:0}
+.info .ico svg{width:12px;height:12px;fill:#fff}
+.info b{color:var(--navy);margin-right:4px}
+.info a{color:var(--ink);text-decoration:none;border-bottom:1px dashed var(--azul-l)}
+
+/* ---------- botones ---------- */
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 8px;border-radius:14px;
+  border:1.4px solid var(--azul-s);background:#fff;color:var(--navy);
+  text-decoration:none;font-size:13.5px;font-weight:700;transition:.18s;
+}
+.btn:hover{border-color:var(--azul);background:var(--azul-bg);transform:translateY(-1px)}
+.btn .cir{width:28px;height:28px;border-radius:9px;background:var(--azul-bg);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.btn svg{width:14px;height:14px;fill:var(--azul)}
+.btn.primary{
+  grid-column:1/-1;border:none;color:#fff;font-size:15px;padding:15px 8px;
+  background:linear-gradient(135deg,var(--naranja-l) 0%,var(--naranja) 100%);
+  box-shadow:0 8px 22px rgba(232,86,28,.35);
+}
+.btn.primary .cir{background:rgba(255,255,255,.2)}
+.btn.primary svg{fill:#fff;width:17px;height:17px}
+.btn.primary:hover{filter:brightness(1.05)}
+.btn.full{grid-column:1/-1}
+
+/* ---------- redes ---------- */
+.social{display:flex;justify-content:center;gap:14px;margin:22px 0 4px}
+.social a{width:46px;height:46px;border-radius:50%;border:1.4px solid var(--azul-s);display:flex;align-items:center;justify-content:center;transition:.18s;background:#fff}
+.social a:hover{background:var(--navy);border-color:var(--navy);transform:translateY(-2px)}
+.social svg{width:20px;height:20px;fill:var(--navy)}
+.social a:hover svg{fill:#fff}
+
+/* ---------- divisor ---------- */
+.divider{display:flex;align-items:center;gap:12px;margin:22px 0 14px;color:var(--navy)}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--azul-l))}
+.divider::after{background:linear-gradient(90deg,var(--azul-l),transparent)}
+.divider span{font-family:'Josefin Sans',sans-serif;font-size:12px;letter-spacing:4px;font-weight:600;text-transform:uppercase}
+
+/* ---------- QR ---------- */
+.qr-zone{display:flex;align-items:center;justify-content:center;gap:12px}
+.escanea{font-family:'Segoe Script','Brush Script MT',cursive;font-size:15px;color:var(--naranja);transform:rotate(-9deg);line-height:1.3}
+.escanea .arrow{display:block;font-size:19px;transform:rotate(15deg)}
+.qr-frame{padding:3px;border-radius:18px;background:linear-gradient(140deg,var(--azul-l),var(--navy))}
+.qr-box{background:#fff;padding:9px;border-radius:15px}
+.qr-box img,.qr-box svg{display:block;width:128px;height:128px}
+.share{margin-top:14px;display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1.4px solid var(--azul-s);background:#fff;color:var(--navy);font:600 13px 'Montserrat',sans-serif;cursor:pointer}
+.share svg{width:14px;height:14px;fill:var(--azul)}
+.share:hover{border-color:var(--azul)}
+
+/* ---------- pie ---------- */
+.footer{margin-top:20px;padding-top:15px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+.footer a{color:var(--azul);text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<div class="frame">
+<main class="card">
+  <header class="hero">
+    <!-- trazos de plano, eco del isotipo -->
+    <svg class="plano" viewBox="0 0 430 260" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#fff" stroke-width="1.2">
+      <path d="M-10 214 H440" /><path d="M28 -10 V270" stroke-dasharray="4 5"/><path d="M402 -10 V270" stroke-dasharray="4 5"/>
+      <path d="M-20 150 L90 30 L190 150" stroke-dasharray="5 5"/><path d="M250 150 L340 50 L450 170" stroke-dasharray="5 5"/>
+      <path d="M40 214 V150 L90 100 L140 150 V214"/><path d="M300 214 V120 H350 V214"/><path d="M360 214 V160 L380 140 L400 160 V214"/>
+    </svg>
+    <div class="brand-sub">Ingeniería · Construcción</div>
+    <svg class="corte" viewBox="0 0 430 46" preserveAspectRatio="none"><path d="M0,46 L0,30 L430,4 L430,46 Z" fill="#ffffff"/><path d="M0,30 L430,4" stroke="#E8561C" stroke-width="3"/></svg>
+  </header>
+
+  <div class="body">
+    <div class="badge"><img src="img/logo-circular.png" alt="AGEO Constructora"></div>
+
+    <h1><small>Ing.</small>Alberto Escobar Oñate</h1>
+    <p class="role">Ingeniero Civil · AGEO Constructora</p>
+    <p class="bio">Ingeniería civil y construcción en Ambato, Tungurahua.</p>
+
+    <div class="info">
+      <div><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4 3.3 3.3-1.4 1.4-3.9-3.9V6h2z"/></svg></span><b>Atención:</b> lunes a viernes</div>
+      <div><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg></span><b>Dirección:</b> <a href="https://www.google.com/maps/search/?api=1&query=Huachi+Grande,+Ambato,+Ecuador" target="_blank" rel="noopener">Huachi Grande · Ambato</a></div>
+      <div><span class="ico"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></span><b>Correo:</b> <a href="mailto:a_g_e_o@hotmail.com">a_g_e_o@hotmail.com</a></div>
+    </div>
+
+    <div class="actions">
+      <a class="btn primary" href="https://wa.me/593987271384?text=Buen%20d%C3%ADa%2C%20estoy%20interesado%20en%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">
+        <span class="cir"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2zm5.83 14.16c-.25.7-1.45 1.33-2.03 1.42-.52.08-1.18.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5.01-4.36-5.16-4.56-.15-.2-1.23-1.64-1.23-3.13 0-1.49.78-2.22 1.06-2.52.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.68.52.25.6.85 2.08.93 2.23.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.32.4-.45.53-.15.15-.31.31-.13.61.18.3.79 1.3 1.7 2.11 1.17 1.04 2.15 1.36 2.46 1.52.3.15.48.13.66-.08.18-.2.76-.89.96-1.19.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.3.15.5.23.58.35.07.13.07.73-.18 1.43z"/></svg></span>
+        Escríbeme por WhatsApp
+      </a>
+      <a class="btn full" href="alberto-escobar.vcf" download>
+        <span class="cir"><svg viewBox="0 0 24 24"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 4h14v-2H5v2z"/></svg></span>
+        Guardar contacto
+      </a>
+      <a class="btn" href="tel:+593987271384">
+        <span class="cir"><svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5a1 1 0 0 1 1-1H7.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg></span>
+        Llamar
+      </a>
+      <a class="btn" href="mailto:a_g_e_o@hotmail.com">
+        <span class="cir"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+        Correo
+      </a>
+    </div>
+
+    <div class="social">
+      <a href="https://www.facebook.com/search/top?q=Alberto%20Escobar%20O%C3%B1ate" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07z"/></svg>
+      </a>
+      <a href="https://www.tiktok.com/@albertogescobar" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-2.31-2.83v-3.5a6.37 6.37 0 1 0 5.76 6.33V8.69a8.18 8.18 0 0 0 4.77 1.52V6.75c-.34 0-.67-.02-1-.06z"/></svg>
+      </a>
+    </div>
+
+    <div class="divider"><span>Comparte esta tarjeta</span></div>
+    <div class="qr-zone">
+      <div class="escanea">Escanea o<br>comparte<span class="arrow">↝</span></div>
+      <div class="qr-frame"><div class="qr-box" id="qr"><img src="QR-AgeoConstructora.png" alt="QR AGEO Constructora" onerror="this.remove();genQR()"></div></div>
+    </div>
+    <button class="share" type="button" onclick="compartir()">
+      <svg viewBox="0 0 24 24"><path d="M18 16a3 3 0 0 0-2.4 1.2l-6.7-3.4a3 3 0 0 0 0-1.6l6.7-3.4A3 3 0 1 0 15 7l-6.7 3.4a3 3 0 1 0 0 3.2L15 17a3 3 0 1 0 3-1z"/></svg>
+      Compartir enlace
+    </button>
+
+    <div class="footer">Tarjeta digital creada por <a href="https://www.evowebec.com" target="_blank" rel="noopener">EvoWeb</a> · Ambato, Ecuador</div>
+  </div>
+</main>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+function genQR(){try{var q=qrcode(0,'M');q.addData('https://ageo.evowebec.com');q.make();document.getElementById('qr').innerHTML=q.createSvgTag({scalable:true,margin:0});}catch(e){}}
+function compartir(){
+  var d={title:'Ing. Alberto Escobar Oñate · AGEO Constructora',text:'Ingeniero Civil · AGEO Constructora',url:'https://ageo.evowebec.com'};
+  if(navigator.share){navigator.share(d).catch(function(){});}
+  else{window.open('https://wa.me/?text='+encodeURIComponent(d.title+' — '+d.url),'_blank');}
+}
+</script>
+<script>
+  window.goatcounter = { path: function(p) { return location.host + p } };
+</script>
+<script data-goatcounter="https://evowebec.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

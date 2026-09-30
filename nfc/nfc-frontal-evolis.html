@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AGEO Constructora · NFC Frontal (Evolis)</title>
+<style>
+/* fuentes locales (carpeta fonts/) para que el PNG salga igual sin internet */
+@font-face{font-family:'Josefin Sans';font-weight:300;src:url(fonts/josefin-sans-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'Josefin Sans';font-weight:400;src:url(fonts/josefin-sans-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Josefin Sans';font-weight:600;src:url(fonts/josefin-sans-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Josefin Sans';font-weight:700;src:url(fonts/josefin-sans-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500;src:url(fonts/montserrat-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:700;src:url(fonts/montserrat-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2) format('woff2')}
+/* FRONTAL AGEO · PLANO PARA EVOLIS: colores sólidos, sin degradados ni sombras */
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1012px;height:638px;overflow:hidden;font-family:'Josefin Sans','Century Gothic',sans-serif;background:#0B2545}
+.card{width:1012px;height:638px;position:relative;overflow:hidden;background:#0B2545;display:flex;align-items:center;justify-content:center}
+.marco{position:absolute;left:30px;top:30px;right:30px;bottom:30px;border:2px solid #3FA7DE}
+.esq{position:absolute;width:46px;height:46px;border-color:#E8561C;border-style:solid}
+.esq.tl{left:22px;top:22px;border-width:6px 0 0 6px}
+.esq.br{right:22px;bottom:22px;border-width:0 6px 6px 0}
+.marca img{height:440px;display:block;margin-top:-30px}
+.pie{position:absolute;left:0;right:0;bottom:46px;text-align:center;font-size:17px;letter-spacing:7px;color:#3FA7DE;font-weight:400;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="marco"></div><div class="esq tl"></div><div class="esq br"></div>
+  <div class="marca"><img src="logo-circular-frontal.png" alt="AGEO Constructora"></div>
+  <div class="pie">Ambato · Ecuador</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AGEO Constructora · NFC Posterior (Evolis)</title>
+<style>
+/* fuentes locales (carpeta fonts/) para que el PNG salga igual sin internet */
+@font-face{font-family:'Josefin Sans';font-weight:300;src:url(fonts/josefin-sans-latin-300-normal.woff2) format('woff2')}
+@font-face{font-family:'Josefin Sans';font-weight:400;src:url(fonts/josefin-sans-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Josefin Sans';font-weight:600;src:url(fonts/josefin-sans-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Josefin Sans';font-weight:700;src:url(fonts/josefin-sans-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:500;src:url(fonts/montserrat-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:700;src:url(fonts/montserrat-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Montserrat';font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2) format('woff2')}
+/* POSTERIOR AGEO · PLANO PARA EVOLIS: colores sólidos, QR negro de alto contraste */
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1012px;height:638px;overflow:hidden;font-family:'Montserrat','Segoe UI',sans-serif}
+.card{width:1012px;height:638px;position:relative;overflow:hidden;background:#fff}
+
+/* columna QR */
+.left{position:absolute;left:0;top:0;bottom:96px;width:372px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.qrbox{padding:10px;background:#fff;border:4px solid #0B2545;border-radius:14px}
+.qrbox img{width:210px;height:210px;display:block}
+.qrlbl{font-family:'Josefin Sans',sans-serif;font-size:14px;letter-spacing:2.5px;color:#1B7FC4;font-weight:600;margin-top:14px;text-transform:uppercase;text-align:center;line-height:1.5}
+.vsep{position:absolute;left:372px;top:64px;bottom:160px;width:3px;background:#E8561C}
+
+/* columna datos */
+.right{position:absolute;left:414px;right:44px;top:62px}
+.nombre{font-size:33px;white-space:nowrap;font-weight:800;color:#0B2545;letter-spacing:.5px;line-height:1.1}
+.cargo{font-family:'Josefin Sans',sans-serif;font-size:20px;letter-spacing:6px;color:#1B7FC4;font-weight:600;text-transform:uppercase;margin-top:12px}
+.regla{width:86px;height:5px;background:#E8561C;margin:22px 0 24px}
+.fila{display:flex;align-items:center;gap:16px;font-size:29px;color:#1c2b3d;font-weight:600;margin-bottom:16px}
+.ic{width:44px;height:44px;border-radius:10px;background:#0B2545;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ic svg{width:23px;height:23px;fill:#fff}
+
+/* banda inferior */
+.band{position:absolute;left:0;right:0;bottom:0;height:96px;background:#0B2545;display:flex;align-items:center;justify-content:center}
+.band::before{content:'';position:absolute;left:0;right:0;top:0;height:6px;background:#1B7FC4}
+.band span{font-family:'Josefin Sans',sans-serif;color:#fff;font-size:30px;letter-spacing:12px;font-weight:300;margin-top:6px}
+.band b{font-weight:600}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <div class="qrbox"><img src="qr-ageo.png" alt="QR AGEO"></div>
+    <div class="qrlbl">Acerca tu teléfono<br>o escanea</div>
+  </div>
+  <div class="vsep"></div>
+
+  <div class="right">
+    <div class="nombre">ING. ALBERTO ESCOBAR O.</div>
+    <div class="cargo">Ingeniero Civil</div>
+    <div class="regla"></div>
+    <div class="fila"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2zm5.83 14.16c-.25.7-1.45 1.33-2.03 1.42-.52.08-1.18.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.03-1.31-5.01-4.36-5.16-4.56-.15-.2-1.23-1.64-1.23-3.13 0-1.49.78-2.22 1.06-2.52.28-.3.6-.38.8-.38h.58c.18 0 .43-.07.68.52.25.6.85 2.08.93 2.23.08.15.13.33.03.53-.1.2-.15.33-.3.5-.15.18-.32.4-.45.53-.15.15-.31.31-.13.61.18.3.79 1.3 1.7 2.11 1.17 1.04 2.15 1.36 2.46 1.52.3.15.48.13.66-.08.18-.2.76-.89.96-1.19.2-.3.4-.25.68-.15.28.1 1.77.83 2.07.98.3.15.5.23.58.35.07.13.07.73-.18 1.43z"/></svg></span>098 727 1384</div>
+    <div class="fila"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></span>a_g_e_o@hotmail.com</div>
+    <div class="fila"><span class="ic"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-2.31-2.83v-3.5a6.37 6.37 0 1 0 5.76 6.33V8.69a8.18 8.18 0 0 0 4.77 1.52V6.75c-.34 0-.67-.02-1-.06z"/></svg></span>@albertogescobar</div>
+    <div class="fila"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg></span>Huachi Grande · Ambato</div>
+  </div>
+
+  <div class="band"><span><b>AGEO</b> CONSTRUCTORA</span></div>
+</div>
+</body>
+</html>
