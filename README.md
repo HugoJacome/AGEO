@@ -53,7 +53,7 @@ AGEO/
 ## Impresión de la tarjeta NFC (Evolis)
 
 - Medida: **1012 × 638 px = 85,6 × 54 mm a 300 dpi** (CR80).
-- Frente blanco con el logo circular a color, filete azul y esquinas naranjas.
+- Frente azul marino a sangre completa (#0B2545) con el emblema en blanco y naranja: sacar prueba antes, la cobertura oscura total es la que más exige a la cinta.
 - El reverso es blanco con banda marina inferior; QR negro sobre blanco.
 
 ## Programación del chip NFC
